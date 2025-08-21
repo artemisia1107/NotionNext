@@ -13,13 +13,11 @@ const TianLiGPT = () => {
   const tianliKey = siteConfig('TianliGPT_KEY')
   const tianliCss = siteConfig('TianliGPT_CSS')
   const tianliJs = siteConfig('TianliGPT_JS')
-// 新增的配置变量：获取文章链接和选择器
-  const postURL = siteConfig('TianliGPT_PostURL') // 获取文章链接
-  const postSelector = siteConfig('tianliGPT_postSelector') // 获取文章选择器
+  const tianliGPT_postURL = siteConfig('TianliGPT_PostURL')
+  const tianliGPT_postSelector = siteConfig('TianliGPT_PostSelector')
   useEffect(() => {
-    // 在useEffect中初始化AI并使用新配置变量
-    initAI(postURL, postSelector) // 假设我们将URL和选择器传给初始化函数
-  }, [postURL, postSelector]) // 依赖项变更时重新运行
+    initArtalk()
+  }, [])
 
   if (!tianliKey) {
     return null
@@ -33,7 +31,8 @@ const TianLiGPT = () => {
     }
     await loadExternalResource(tianliCss, 'css')
 
-    window.tianliGPT_postSelector = '#notion-article';
+    window.tianliGPT_postSelector = tianliGPT_postSelector;
+    window.tianliGPT_postURL = tianliGPT_postURL;
     window.tianliGPT_key = tianliKey;
 
     await loadExternalResource(tianliJs, 'js')
