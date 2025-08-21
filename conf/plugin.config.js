@@ -26,6 +26,7 @@ module.exports = {
     'https://ai.zhheo.com/static/public/tianli_gpt.min.js',
   TianliGPT_KEY: process.env.NEXT_PUBLIC_TIANLI_GPT_KEY || 'S-J48A7SHZMBBEA0GV',
   TianliGPT_PostURL: process.env.NEXT_PUBLIC_TIANLIGPT_POST_URL || '*/technology/*.html', // 设置文章链接
+  TianliGPT_PostSelector: process.env.NEXT_PUBLIC_TIANLIGPT_POST_SELECTOR || '#notion-article', // 指定文章选择器
 
   // 邮件
   MAILCHIMP_LIST_ID: process.env.MAILCHIMP_LIST_ID || null, // 开启mailichimp邮件订阅 客户列表ID ，具体使用方法参阅文档
