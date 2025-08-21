@@ -12,7 +12,7 @@ module.exports = {
   // AI 文章摘要生成
 
   AI_SUMMARY_API: process.env.AI_SUMMARY_API || '',
-  AI_SUMMARY_KEY: process.env.AI_SUMMARY_KEY || '',
+  AI_SUMMARY_KEY: process.env.AI_SUMMARY_KEY || 'S-J48A7SHZMBBEA0GV',
   AI_SUMMARY_CACHE_TIME: process.env.AI_SUMMARY_CACHE_TIME || 1800, // 缓存时间，单位秒
   AI_SUMMARY_WORD_LIMIT: process.env.AI_SUMMARY_WORD_LIMIT || 1000,
 
@@ -24,7 +24,7 @@ module.exports = {
   TianliGPT_JS:
     process.env.NEXT_PUBLIC_TIANLI_GPT_JS ||
     'https://ai.zhheo.com/static/public/tianli_gpt.min.js',
-  TianliGPT_KEY: process.env.NEXT_PUBLIC_TIANLI_GPT_KEY || 'S-J48A7SHZMBBEA0GV',
+  TianliGPT_KEY: process.env.NEXT_PUBLIC_TIANLI_GPT_KEY || '',
   TianliGPT_PostURL: process.env.NEXT_PUBLIC_TIANLI_GPT_POST_URL || 'https://artemisia.icu/technology/*', // 设置文章链接
   TianliGPT_PostSelector: process.env.NEXT_PUBLIC_TIANLI_GPT_POST_SELECTOR || '#notion-article', // 指定文章选择器
 
