@@ -13,10 +13,14 @@ const TianLiGPT = () => {
   const tianliKey = siteConfig('TianliGPT_KEY')
   const tianliCss = siteConfig('TianliGPT_CSS')
   const tianliJs = siteConfig('TianliGPT_JS')
+// 新增的配置变量：获取文章链接和选择器
+  const postURL = siteConfig('TianliGPT_PostURL') || ""; // 获取文章链接，默认为空字符串
+  const postSelector = siteConfig('tianliGPT_postSelector') || ""; // 获取文章选择器，默认为空字符串
 
   useEffect(() => {
-    initArtalk()
-  }, [])
+    // 在useEffect中初始化AI并使用新配置变量
+    initAI(postURL, postSelector) // 假设我们将URL和选择器传给初始化函数
+  }, [postURL, postSelector]) // 依赖项变更时重新运行
 
   if (!tianliKey) {
     return null
