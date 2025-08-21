@@ -25,7 +25,7 @@ module.exports = {
     process.env.NEXT_PUBLIC_TIANLI_GPT_JS ||
     'https://ai.zhheo.com/static/public/tianli_gpt.min.js',
   TianliGPT_KEY: process.env.NEXT_PUBLIC_TIANLI_GPT_KEY || 'S-J48A7SHZMBBEA0GV',
-  TianliGPT_PostURL: process.env.NEXT_PUBLIC_TIANLI_GPT_POST_URL || '', // 设置文章链接
+  TianliGPT_PostURL: process.env.NEXT_PUBLIC_TIANLI_GPT_POST_URL || 'https://artemisia.icu/technology/*', // 设置文章链接
   TianliGPT_PostSelector: process.env.NEXT_PUBLIC_TIANLI_GPT_POST_SELECTOR || '#notion-article', // 指定文章选择器
 
   // 邮件
