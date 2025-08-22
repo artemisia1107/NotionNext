@@ -13,8 +13,7 @@ const TianLiGPT = () => {
   const tianliKey = siteConfig('TianliGPT_KEY')
   const tianliCss = siteConfig('TianliGPT_CSS')
   const tianliJs = siteConfig('TianliGPT_JS')
-  const tianliGPT_postURL = siteConfig('TianliGPT_PostURL')
-  const tianliGPT_postSelector = siteConfig('TianliGPT_PostSelector')
+
   useEffect(() => {
     initArtalk()
   }, [])
@@ -31,8 +30,7 @@ const TianLiGPT = () => {
     }
     await loadExternalResource(tianliCss, 'css')
 
-    window.tianliGPT_postSelector = tianliGPT_postSelector;
-    window.tianliGPT_postURL = tianliGPT_postURL;
+    window.tianliGPT_postSelector = '#notion-article';
     window.tianliGPT_key = tianliKey;
 
     await loadExternalResource(tianliJs, 'js')
