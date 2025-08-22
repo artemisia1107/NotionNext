@@ -1,1 +1,4 @@
-// 这里编写自定义js脚本；将被静态引入到页面中
+let tianliGPT_postSelector = '#notion-article';
+let tianliGPT_postURL = 'https://artemisia.icu/technology/*';
+let tianliGPT_Title = '文章总结';
+let tianliGPT_key = 'S-J48A7SHZMBBEA0GV';
