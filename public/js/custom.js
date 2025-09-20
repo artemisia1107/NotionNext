@@ -7,3 +7,11 @@ if (typeof tianliGPT_key !== 'undefined' && tianliGPT_key) {
   postchat_checkSystemType();
   window.tianliGPT.checkURLAndRun();
 }
+
+<script dangerouslySetInnerHTML={{__html: `
+  window.BLOG = ${JSON.stringify({
+    AI_SUMMARY_SWITCH:  BLOG.AI_SUMMARY_SWITCH,
+    AI_SUMMARY_WORKER:  BLOG.AI_SUMMARY_WORKER,
+    AI_SUMMARY_TOKEN:   BLOG.AI_SUMMARY_TOKEN
+  })};
+`}} />
