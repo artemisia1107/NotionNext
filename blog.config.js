@@ -68,9 +68,6 @@ const BLOG = {
 
   // uuid重定向至 slug
   UUID_REDIRECT: process.env.UUID_REDIRECT || false
-  
-  AI_SUMMARY_WORKER: 'https://aisummary.artemisia.icu', // Worker 根地址
-  AI_SUMMARY_TOKEN: 'abc123'                            // 与 Worker 环境变量 TOKEN 一致
 }
 
 module.exports = BLOG
